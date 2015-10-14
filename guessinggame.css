@@ -1,0 +1,49 @@
+body {
+    background-color: #80a;
+    text-align: center;
+    font-family: "Lucida Console";
+    padding: 20px 50px;
+    margin: auto;
+    max-width: 650px;
+}
+h1 {
+    font-weight: bold;
+    color: rgb(29,77,60);
+    text-shadow: 2px 2px #6cc;
+}
+p {
+    font-size: 16px;
+}
+#game {
+    background-color: #aaa;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+#guess {
+    width: 144px;
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 12px;
+    }
+    #game {
+        margin: 30px;
+    }
+    .form-inline {
+        display: inline-block;
+    }
+    input + button {
+        margin-top: 10px;
+    }
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+input:valid {
+    border: 2px solid green;
+}
